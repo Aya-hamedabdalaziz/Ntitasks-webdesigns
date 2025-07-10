@@ -1,0 +1,131 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+
+/* global  */
+.bg-light {
+  background-color: lightgray;
+}
+.clear {
+  clear: both;
+}
+
+.container .content {
+  display: inline-block;
+  width: 40%;
+}
+.container form {
+  float: right;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  width: 35%;
+  margin-top: 0%;
+
+}
+
+.container form input{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 4%;
+    height: 50px;
+padding-left: 3px;;
+
+
+}
+.container form  h3{text-align: center;}
+
+.btn2{width: 100%;  color:darkgoldenrod; height:50px; border: none;  color: white ;  background-color:rebeccapurple ;}
+
+
+.text-c {
+  text-align: center;
+}
+.d-inline {
+  display: inline-block;
+}
+
+nav ul {
+  float: right;
+  padding-top: 0.7%;
+}
+ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.float-right {
+  float: right;
+}
+
+/* custom */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  background-color:rgb(55, 13, 67) ;
+  color: whitesmoke;
+  text-transform: capitalize;
+
+  padding: 1% 0;
+  box-shadow: 0px 0px 5px 4px rgb(188, 184, 184);
+}
+nav h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+span {
+  color:rebeccapurple;
+  font-weight: 100;
+}
+
+
+.banner{background-image: url(../imgs/mountain2.png);
+/* height: 700px; */
+    background-repeat: no-repeat;
+    opacity: .9;
+    background-position-x: center;
+    background-position-y: center;
+    height: 100vh;
+}
+
+
+.overlay {
+    background-color: #00000056;
+    height: 100%;
+    padding: 6% 0%;
+}
+.container .content h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+hr {
+  width: 20%;
+  border: 1.4px solid white;
+  float: left;
+}
+
+
+.btn{background-color: transparent
+    ; padding:2% 6%;
+border: 2px solid rgba(77, 47, 85, 0.936); ;
+font-weight: bold;
+
+}
