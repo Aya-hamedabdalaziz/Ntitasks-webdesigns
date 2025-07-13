@@ -114,7 +114,7 @@ body {
   padding: 40px 20px;
   color: white;
   font-weight: bold;
- 
+ border: 1px solid white;
   width: 50%;
 }
 
