@@ -1,0 +1,94 @@
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+.icons {
+  border: none;
+  border-right: 2px solid white;
+}
+.nav-item {
+  margin-left: 5px;
+}
+
+.navbar .container a {
+  color: black;
+  font-weight: 600;
+}
+.navbar .container a:hover {
+  color: rgb(28, 123, 211);
+  font-weight: 600;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  transform: translateX(8px);
+}
+
+
+
+.carousel-item img {
+  filter: brightness(20%) contrast(110%);
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  transition: filter 1s ease;
+}
+
+.carousel-caption,
+.carousel-indicators {
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+@media (min-width:1200px){
+.carousel-indicators {
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+}
+
+.dropdown-menu {
+  border-top: 3px solid #0d6efd;
+}}
+
+.carousel-indicators {
+  gap:10px;
+  position: fixed;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: white;
+  margin-right: 3px;
+  margin-left: 3px;
+  z-index: 2;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.carousel-indicators .active {
+  background-color: transparent;
+  transform: scale(1.5);
+  border: 1px solid white;
+  
+}

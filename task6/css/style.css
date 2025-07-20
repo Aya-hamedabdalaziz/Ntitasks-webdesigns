@@ -19,19 +19,9 @@ a {
 
 #section5 {
   background-image: url(../imgs/tyler-lastovich-AVzByhROPbs-unsplash\ 1.png);
-  background-size: 100% 100%;
+  background-size: 100% 70%;
   background-repeat: no-repeat;
-  background-position: center;
+  
 }
 
 
-.footer {margin-top: 200px;}
-.bg2{width: 90%;}
-
-@media (max-width:1200px) {
- .footer {margin-top: 300px;} 
-}
-
-@media (max-width:768px) {
- .footer {margin-top: 500px;} 
-}
