@@ -4,208 +4,426 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    
+
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/all.min.css">
+   
+    <link rel="stylesheet" href="css/all.min.css" />
+     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="bg-primary text-light py-3 d-none d-lg-block">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      
-     
-      <div class="col-md-6 d-flex align-items-center">
-       
-        <div class="d-flex gap-3 pe-3 icons py-1">
-          <i class="fa-brands fa-facebook-f fs-5"></i>
-          <i class="fa-brands fa-twitter fs-5"></i>
-          <i class="fa-brands fa-youtube fs-5"></i>
-          <i class="fa-brands fa-linkedin fs-5"></i>
-        </div>
-
-       
-        <div class="d-flex align-items-center">
-          <i class="fa-solid fa-location-dot pe-2 ps-2"></i>
-          <span>267 Park Avenue New York, NY 90210, Cairo</span>
-        </div>
-      </div>
-
-      <div class="col-md-6 d-flex justify-content-end align-items-center">
-       
-        <div class="d-flex align-items-center me-4 icons pe-2">
-          <i class="fa-solid fa-envelope pe-2"></i>
-          <span>Quick Email</span>
-        </div>
-
-       
-        <div class="d-flex align-items-center">
-          <i class="fa-solid fa-phone pe-2"></i>
-          <span>01278367</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</header>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary  text-uppercase py-3 shadow-sm  ">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="imgs/Trade-X-Logo.png"></a>
-    <button class="navbar-toggler bg-md-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon "></span>
-    </button>
-    <div class="collapse navbar-collapse  " id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Home
-          </a>
-          <ul class="dropdown-menu rounded-0">
-            <li><a class="dropdown-item" href="#">hOME1</a></li><hr>
-            <li><a class="dropdown-item" href="#">hOME2</a></li>
-            
-          </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="contact.html">About</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Headers
-          </a>
-          <ul class="dropdown-menu rounded-0">
-            <li><a class="dropdown-item" href="#">Action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Another action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blog post
-          </a>
-          <ul class="dropdown-menu rounded-0">
-            <li><a class="dropdown-item" href="#">Action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Another action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            services
-          </a>
-          <ul class="dropdown-menu rounded-0">
-            <li><a class="dropdown-item" href="#">Action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Another action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            features
-          </a>
-          <ul class="dropdown-menu rounded-0">
-            <li><a class="dropdown-item" href="#">Action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Another action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            PAGES
-          </a>
-          <ul class="dropdown-menu rounded-0">
-            <li><a class="dropdown-item" href="#">Action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Another action</a></li><hr>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<section id="section1 position-relative">
-  
-  <div id="carouselExampleDark" class="carousel  slide" >
-    <div class="carousel-indicators position-absolute  ">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"  ></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" ></button>
-
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-
-      <div class="carousel-item active" >
-        <img src="imgs/ecommerce-cover-2.jpg" class="d-block w-100" alt="...">
-        <div class="overlay-filter "></div>
-        <div class="carousel-caption d-none d-md-block">
-          
-        </div>
-      </div>
-      <div class="carousel-item" >
-        <img src="imgs/slider1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-flex flex-column justify-content-center align-items-center position-absolute top-0 bottom-0 start-0 end-0 animate__animated animate__bounceInLeft">
-         <h2 class="fw-bold display-5 display-md-3 spacing text-center ">what to do today for people three</h2>
-
-          <p>Some representative placeholder content for the second slide.</p>
-          <div>
-            <div class="btn btn-primary rounded-pill px-3 py-2 ">
-Get stared now
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="d-flex gap-3 pe-3 icons py-1">
+              <i class="fa-brands fa-facebook-f fs-5"></i>
+              <i class="fa-brands fa-twitter fs-5"></i>
+              <i class="fa-brands fa-youtube fs-5"></i>
+              <i class="fa-brands fa-linkedin fs-5"></i>
             </div>
-           <div class="btn btn-outline-primary rounded-pill text-light px-3 py-2 border boder-light boder-width-2">            
-contact us
-           </div>
+
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-location-dot pe-2 ps-2"></i>
+              <span>267 Park Avenue New York, NY 90210, Cairo</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-end align-items-center">
+            <div class="d-flex align-items-center me-4 icons pe-2">
+              <i class="fa-solid fa-envelope pe-2"></i>
+              <span>Quick Email</span>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-phone pe-2"></i>
+              <span>01278367</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item" >
-        <img src="imgs/slider2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+    </header>
+
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary text-uppercase py-3 shadow-lg"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="imgs/Trade-X-Logo.png" /></a>
+        <button
+          class="navbar-toggler bg-md-dark text-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+              </a>
+              <ul class="dropdown-menu rounded-0 ">
+                <li><a class="dropdown-item" href="#">hOME1</a></li>
+                <hr />
+                <li><a class="dropdown-item" href="#">hOME2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Headers
+              </a>
+              <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <hr />
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog post
+              </a>
+              <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <hr />
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                services
+              </a>
+              <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <hr />
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                features
+              </a>
+              <ul class="dropdown-menu rounded-0">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <hr />
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PAGES
+              </a>
+              <ul class="dropdown-menu rounded-0 bg-dark bgbg-lg-body-tertiary text-light">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <hr />
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+   <section id="section1 " class="position-relative">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators  d-flex align-items-center">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
 
-        <div class="carousel-item" >
-        <img src="imgs/slider2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+    
+   
+      
+
+    <div class="carousel-inner">
+  <!-- Slide 1 -->
+  <div class="carousel-item active">
+    <img src="imgs/ecommerce-cover-2.jpg" class="d-block w-100" alt="..." />
+    <div class="overlay-filter"></div>
+    <div class="carousel-caption d-none d-md-block"></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="carousel-item">
+    <img src="imgs/slider1.jpg" class="d-block w-100" alt="..." />
+    <div class="carousel-caption d-none d-lg-block animate__animated animate__fadeInUp animate__faster">
+      <h2 class="fw-bold display-5 text-center">
+        what to do today for people two
+      </h2>
+      <p class="mb-4">
+        Some representative placeholder content for the second slide.
+      </p>
+      <div class="d-flex gap-3 justify-content-center">
+        <div class="btn btn-primary text-light px-4 py-3 rounded-pill position-relative shine-btn">
+          <span class="btn-text">get start now</span>
+          <div class="scan-lines"></div>
+        </div>
+        <div class="btn btn-outline-primary rounded-pill text-light px-5 py-3 border-2 border-light">
+          contact us
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="carousel-item">
+    <img src="imgs/slider2.jpg" class="d-block w-100" alt="..." />
+    <div class="carousel-caption d-none d-lg-block animate__animated animate__fadeInUp animate__faster">
+      <h5>Third slide label</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="carousel-item">
+    <img src="imgs/slider2.jpg" class="d-block w-100" alt="..." />
+    <div class="carousel-caption d-none d-lg-block animate__animated animate__fadeInUp animate__faster">
+      <h5>Fourth slide label</h5>
+      <p>Some representative placeholder content for the fourth slide.</p>
+    </div>
+  </div>
+
+
+
+
+      <div class="carousel-item">
+  <img src="imgs/slider1.jpg" class="d-block w-100" alt="..." />
+  <div class="carousel-caption d-none d-lg-block animate__animated animate__fadeInUp animate__faster">
+    <h2 class="fw-bold display-5 display-md-3 spacing text-center">
+      what to do today for people three
+    </h2>
+
+    <p class="mb-5">
+      Some representative placeholder content for the second slide.
+    </p>
+
+    <div class="mb-3">
+      <div
+        class="btn btn-primary text-light px-4 py-3 rounded-pill position-relative shine-btn"
+      >
+        <span class="btn-text">get start now</span>
+        <div class="scan-lines"></div>
+      </div>
+
+      <div
+        class="btn btn-outline-primary rounded-pill text-light px-5 py-3 border-2 border-light"
+      >
+        contact us
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <div class="carousel-item">
+  <img src="imgs/slider1.jpg" class="d-block w-100" alt="..." />
+  <div class="carousel-caption d-lg-flex flex-column justify-content-center align-items-center position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center"  >
+isplay-md-3 spacing text-center">
+      what to do today for people three
+    </h2>
+
+    <p class="mb-5">
+      Some representative placeholder content for the second slide.
+    </p>
+
+    <div class="mb-3">
+      <div
+        class="btn btn-primary text-light px-4 py-3 rounded-pill position-relative shine-btn"
+      >
+        <span class="btn-text">get start now</span>
+       
+      </div>
+
+      <div
+        class="btn btn-outline-primary rounded-pill text-light px-5 py-3 border-2 border-light  shine-btn"
+      >
+        contact us
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+      </div>
     
-    
+  
+</section>
+
+
+
+
+<section id="About" class="py-5">
+  <div class="container">
+   
+   <div class="section-title">
+  <span class="line left"></span>
+  <h2 class="ms-4 me-4">About Us</h2>
+  <span class="line right"></span>
+  </div>
+  <p class="text-center text-secondary py-3">About us</p>
+    <div class="row justify-content-center ms-auto ">
+      
+<div class="col-lg-3  h-100   ">
+      
+          <div class=" bg-white shadow py-3  ps-4  z-2">
+             
+
+
+            <div class="row align-items-center  py-2">
+              <div class="col-lg-2 icon py-3">
+              <i class="fa-solid fa-envelope   "></i> </div>
+             <div class="col-8 ">
+<h6 class="fw-bold mb-1">Usability</h6>
+             
+              <span class="text-dark">Lorem ipsum dolor sit amet.</span>  </div>
+            </div>
+            
+            <div class="row align-items-center  py-2">
+              <div class="col-lg-2 icon py-3">
+              <i class="fa-solid fa-thumbs-up fa-xl me-3 text-dark"></i> </div>
+             <div class="col-8 ">
+<h6 class="fw-bold mb-1">Usability</h6>
+             
+              <span class="text-dark">Lorem ipsum dolor sit amet.</span>  </div>
+            </div>
+
+             <div class="row align-items-center  py-2">
+              <div class="col-lg-2 icon py-3">
+             <i class="fa-solid fa-desktop fa-xl me-3 text-dark"></i></i> </div>
+             <div class="col-8 ">
+<h6 class="fw-bold mb-1">Usability</h6>
+             
+              <span class="text-dark">Lorem ipsum dolor sit amet.</span>  </div>
+            </div>
+            
+           
+
+             <div class="row align-items-center  py-2">
+              <div class="col-lg-2 icon py-3">
+              <i class="fa-solid fa-thumbs-up fa-xl me-3 text-dark"></i> </div>
+             <div class="col-8 ">
+<h6 class="fw-bold mb-1">Usability</h6>
+             
+              <span class="text-dark">Lorem ipsum dolor sit amet.</span>  </div>
+            </div>
+          </div> </div>
+      
+      <div class="col-lg-4 position-relative mb-4 mb-lg-0 position-relative z-1">
+       
+        <div class=" overflow-hidden">
+          <img src="imgs/abt-3.jpg" class=" h-100 " alt="About Image"  >
+
+          
+        </div>
+      </div>
+
+      
+      <div class="col-lg-5">
+        <p class="text-secondary ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas vitae enim laudantium mollitia!
+        </p>
+       <p class="text-secondary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas vitae enim laudantium mollitia!
+        </p>
+        <a href="#" class="btn btn-primary   shine-btn text-white rounded-pill px-4 py-2">Learn More</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-  crossorigin="anonymous"
-></script>
-<script
-  src="js/script.js">
-</script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
