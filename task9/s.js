@@ -16,23 +16,38 @@ function toggle(el) {
 
    
  
-  var form = document.getElementById("form");
-  var result = document.getElementById("result");
 
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); 
 
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
+var form = document.getElementById("form");
+var result = document.getElementById("result");
 
-    var div = document.createElement('div');
-    div.style.color="white"
-    div.style.backgroundColor="blue";
+var users = [];
 
-    arr=[name,email]
-    div.innerHTML =`${arr}`
-      
-    ;
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
 
-    result.appendChild(div); 
-  });
+  
+  var name = event.target[0].value;
+  var email = event.target[1].value;
+
+  var user = {
+    name: name,
+    email: email
+  };
+
+  users.push(user);
+
+  
+  var div = document.createElement('div');
+  div.style.color = "white";
+  div.style.backgroundColor = "blue";
+  div.style.padding = "10px";
+
+
+  div.innerText = `Name: ${user.name}, Email: ${user.email}`;
+
+  result.appendChild(div);
+
+  
+  form.reset();
+});
