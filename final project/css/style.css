@@ -2,6 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-style: normal;
+  text-transform: capitalize;
 }
 ul {
   list-style: none;
@@ -30,13 +31,20 @@ a {
   color: rgb(28, 123, 211);
   font-weight: 600;
 }
+.dropdown-menu {
+    border-top: 3px solid #0d6efd;
+    transition: .5s ease;
+    transform: translateX(10px);
+  }
+
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
-  transform: translateX(8px);
+  transform: translateX(15px);
+  
 }
 
-.carousel-item img {
+.carousel-item img ,#services img {
   filter: brightness(20%) contrast(110%);
   opacity: 1;
   position: relative;
@@ -54,8 +62,6 @@ a {
   #section1 {
     position: relative;
   }
-
-  
   .carousel-indicators {
     position: absolute;
     top: 50%;
@@ -63,14 +69,38 @@ a {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    z-index: 2;transform: translateY(-50%);}
+    z-index: 2;
+    transform: translateY(-50%);}
 
-  .dropdown-menu {
-    border-top: 3px solid #0d6efd;
-  }
+  
 }
 
 
+#scrollTopBtn {
+ 
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  z-index: 999;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+
+#scrollTopBtn .arrow-up {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid white;
+}
 .carousel-indicators [data-bs-target] {
   width: 8px;
   height: 8px;
@@ -93,19 +123,11 @@ a {
   
   transition: .5s;
 }
-.carousel-item .btn:hover {
-  filter: brightness(40%);
-}
+
 
 .btn-text {
   position: relative;
   z-index: 2;
-}
-.carousel-item.active .carousel-caption {
-  animation-name: heartBeat;
-  animation-duration: 0.6s;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
 }
 
 .carousel-item {
@@ -132,6 +154,7 @@ a {
   background-color: #006aff;
   position: relative;
   width: 8%;
+  height: 4px;
 }
 
 .right::after {
@@ -158,55 +181,81 @@ a {
   color: gray;
   font-size: 16px;
   margin-top: 20px;
-}
-
-@media (min-width: 1200px) {
-
-  #About .col-lg-3 {
-    flex: 0 0 auto;
-    width: 33.33333333%;
-    
-    
-    z-index: 1000;
-    position: absolute;
-  left:-4%;
-  margin-top: auto;
-    margin-bottom: auto;
   
-  }
 }
 
+@media (min-width: 895px)  {
+  #About .box {
+    background-color: red;
+    z-index: 1000;
+    top: 50%;
+  transform: translateY(-50%);
+ position: absolute !important;
+ 
+  left:-.2rem
+  }
+  #About img{width: 70%;}
+  #About .box  .box-inner:hover   .box-inner  h6  ,  #About .box-inner:hover   .icon i{
+
+color: #006aff;
+  }
+  
+}
 .shine-btn {
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+ 
+  
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .shine-btn::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -75%;
-  width: 50%;
+  left: -100%;
+  width: 80%;
   height: 100%;
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0.2) 100%
+    rgba(255, 255, 255, 0.1) 100%
   );
   transform: skewX(-20deg);
+  transition: left 0.7s ease;
+}
+
+.custom-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: all 0.3s ease;
 }
 
 .shine-btn:hover::before {
-  animation: shine 0.8s ease;
+  left: 100%;
+  border: none;
 }
-
-@keyframes shine {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
+#services{background: url(../imgs/slider1.jpg); 
+ 
+ 
+}
+.display{transition:  .5s ease; }
+.box2 {
+  position: absolute;
+  left: 0;
+  bottom: -100px; 
+  width: 100%;
+ opacity: 0;
+  padding:20px 30px ;
+  transition: transform 0.5s ease;
+  transform: translateY(100%); 
+}
+.display:hover .box2 {
+  transform: translateY(0); 
+  opacity: 1;
 }
