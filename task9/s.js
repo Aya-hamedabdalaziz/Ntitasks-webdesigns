@@ -13,11 +13,6 @@ function toggle(el) {
     }
 
 
-
-   
- 
-
-
 var form = document.getElementById("form");
 var result = document.getElementById("result");
 
